@@ -1,0 +1,790 @@
+@import url("https://use.typekit.net/hag4dxq.css");
+.ltgreen-bg {
+  color: #fff;
+  background: #a0c1ac; }
+
+.dkgreen-bg {
+  color: #a0c1ac;
+  background: #497476; }
+
+.blue-bg {
+  color: #fff;
+  background: #55879a; }
+
+.gray-txt {
+  color: #d1d2d4; }
+
+.btn.text-btn {
+  text-transform: uppercase;
+  color: #2c4b56;
+  font-size: 16px;
+  font-family: "anivers", sans-serif;
+  padding-left: 0; }
+  .btn.text-btn .fas {
+    padding-right: 10px; }
+
+.page-links {
+  text-align: center;
+  font-family: "anivers", sans-serif;
+  font-weight: 600;
+  color: #2c4b56;
+  text-transform: uppercase;
+  font-size: 16px;
+  margin: 10px 0; }
+
+html, body {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background: #fff;
+  font-family: "adonis-web", serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px; }
+  body p {
+    margin: 0 0 15px; }
+  body a {
+    transition: all 666ms ease-in-out; }
+    body a:hover {
+      text-decoration: none; }
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+/*** IPHONE X : Landscape ***/
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px) {
+  .page-links {
+    margin: 45px 0; }
+    .page-links .btn {
+      font-size: 21px; }
+      .page-links .btn .fas {
+        padding-right: 15px; } }
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/
+.nav-btn {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  z-index: 2;
+  width: 30px;
+  height: 12px;
+  transform: translateY(-50%) rotate(0deg);
+  transition: transform 666ms ease-in-out; }
+  .nav-btn:focus {
+    outline: 0; }
+  .nav-btn .nav-iconbar {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: #2c4b56;
+    box-shado: 0 0 2px rgba(0, 0, 0, 0.3);
+    opacity: 1;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out; }
+    .nav-btn .nav-iconbar:nth-child(1) {
+      top: 0; }
+    .nav-btn .nav-iconbar:nth-child(2), .nav-btn .nav-iconbar:nth-child(3) {
+      top: 9px; }
+    .nav-btn .nav-iconbar:nth-child(4) {
+      top: 18px; }
+  .nav-btn.open .nav-iconbar:nth-child(1) {
+    top: 12px;
+    opacity: 0; }
+  .nav-btn.open .nav-iconbar:nth-child(2) {
+    transform: rotate(-45deg);
+    transition-delay: .3s; }
+  .nav-btn.open .nav-iconbar:nth-child(3) {
+    transform: rotate(45deg);
+    transition-delay: .3s; }
+  .nav-btn.open .nav-iconbar:nth-child(4) {
+    top: 12px;
+    opacity: 0; }
+
+.navigation {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #2c4b56;
+  transform: translateX(100%);
+  transition: all 666ms ease-in-out; }
+  .navigation .menu-main-menu-container .main-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    .navigation .menu-main-menu-container .main-menu li {
+      padding: 8px 0;
+      font-size: 1.25em; }
+      .navigation .menu-main-menu-container .main-menu li a {
+        color: #2c4b56; }
+  .navigation.is-visible {
+    transform: translateX(0); }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 60px; }
+  .header .header-logo {
+    position: absolute;
+    left: 8%;
+    top: 10px;
+    transform: translateY(0);
+    z-index: 1; }
+    .header .header-logo svg {
+      width: 210px;
+      height: 80px; }
+
+.homepage-section.mobile-slides {
+  margin-top: 30px; }
+  .homepage-section.mobile-slides .swiper .swiper-wrapper .swiper-slide .swiper-caption {
+    min-height: 150px;
+    background: #a0c1ac;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .homepage-section.mobile-slides .swiper .swiper-wrapper .swiper-slide .swiper-caption .caption-content {
+      flex-basis: 90%; }
+      .homepage-section.mobile-slides .swiper .swiper-wrapper .swiper-slide .swiper-caption .caption-content p {
+        margin: 0; }
+  .homepage-section.mobile-slides .swiper .swiper-pagination {
+    bottom: 150px; }
+    .homepage-section.mobile-slides .swiper .swiper-pagination .swiper-pagination-bullet {
+      background: transparent;
+      width: 18px;
+      height: 18px;
+      border-radius: 0;
+      margin-bottom: 5px;
+      margin-right: 9px;
+      border: 1px solid #fff;
+      opacity: 1; }
+      .homepage-section.mobile-slides .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+        background: #fff; }
+
+.homepage-section.homepage-slides {
+  display: none; }
+
+.homepage-section.homepage-content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 5vh 0;
+  background: transparent url("../images/bg-shape.png") no-repeat right center;
+  background-size: contain; }
+  .homepage-section.homepage-content-section .homepage-content-container {
+    flex-basis: 80%; }
+    .homepage-section.homepage-content-section .homepage-content-container .homepage-content {
+      text-align: center;
+      font-size: 1.15em;
+      line-height: 2.25em; }
+
+.page-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; }
+  .page-section.page-heroimage {
+    margin-top: 30px; }
+  .page-section.page-content-section {
+    background: transparent url("../images/grayshapes-bg.png") no-repeat left top; }
+    .page-section.page-content-section .page-content-container {
+      flex-basis: 90%;
+      padding: 3vh 0;
+      text-align: center; }
+      .page-section.page-content-section .page-content-container .subtitle {
+        text-transform: uppercase;
+        font-family: "anivers", sans-serif;
+        font-size: 21px;
+        font-weight: 600;
+        color: #2c4b56;
+        margin-bottom: 0; }
+      .page-section.page-content-section .page-content-container h2, .page-section.page-content-section .page-content-container h4 {
+        font-family: "anivers", sans-serif;
+        font-weight: 600;
+        color: #2c4b56;
+        font-size: 28px;
+        margin-bottom: 25px; }
+      .page-section.page-content-section .page-content-container h3 {
+        font-family: "anivers", sans-serif;
+        font-weight: 600;
+        color: #2c4b56;
+        font-size: 32px; }
+      .page-section.page-content-section .page-content-container h4 {
+        margin-bottom: 5px;
+        font-size: 24px; }
+      .page-section.page-content-section .page-content-container p {
+        font-size: 18px;
+        line-height: 36px; }
+    .page-section.page-content-section .wpcf7 {
+      margin: 4.5vh 0; }
+      .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group {
+        margin-bottom: 0; }
+        .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half,
+        .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full {
+          margin-bottom: 15px; }
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .form-control,
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .form-control {
+            border-radius: 0;
+            border-color: #2c4b56;
+            color: #2c4b56; }
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .form-control::placeholder,
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .form-control::placeholder {
+              color: #2c4b56; }
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .wpcf7-textarea,
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .wpcf7-textarea {
+            width: 100%;
+            padding: 10px; }
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .wpcf7-textarea::placeholder,
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .wpcf7-textarea::placeholder {
+              color: #2c4b56; }
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .right-text,
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .right-text {
+            text-align: right; }
+        .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .btn {
+          padding: 0;
+          font-family: "anivers", sans-serif;
+          font-weight: 600;
+          font-size: 18px;
+          text-transform: uppercase; }
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .btn .fas {
+            padding-right: 15px; }
+  .page-section.principles-section {
+    padding: 3vh 0; }
+    .page-section.principles-section .left-column,
+    .page-section.principles-section .right-column {
+      text-align: center; }
+    .page-section.principles-section .left-column {
+      margin-bottom: 25px; }
+    .page-section.principles-section .right-column {
+      font-weight: 600;
+      font-family: "anivers", sans-serif;
+      font-size: 18px; }
+      .page-section.principles-section .right-column ul {
+        list-style-position: inside;
+        padding: 0;
+        margin: 15px 0;
+        font-weight: normal; }
+        .page-section.principles-section .right-column ul li {
+          padding: 4px 0; }
+  .page-section.leadership-section {
+    background: transparent url("../images/bg-shape.png") no-repeat right top;
+    background-size: 70%;
+    margin: 3vh 0; }
+    .page-section.leadership-section .leadership-container {
+      flex-basis: 90%; }
+      .page-section.leadership-section .leadership-container .leadership {
+        margin-bottom: 45px;
+        text-align: center; }
+        .page-section.leadership-section .leadership-container .leadership .leadership-bio h2, .page-section.leadership-section .leadership-container .leadership .leadership-bio h3 {
+          font-family: "anivers", sans-serif;
+          font-weight: 600;
+          color: #2c4b56; }
+        .page-section.leadership-section .leadership-container .leadership .leadership-bio .title {
+          text-transform: uppercase;
+          font-size: 21px; }
+  .page-section.project-section {
+    background: transparent url("../images/bg-shape.png") no-repeat right center;
+    background-size: 70%; }
+    .page-section.project-section .project-container {
+      flex-basis: 90%; }
+      .page-section.project-section .project-container .project {
+        margin-bottom: 30px; }
+        .page-section.project-section .project-container .project p {
+          font-size: 18px;
+          line-height: 32px; }
+        .page-section.project-section .project-container .project .project-name {
+          font-family: "anivers", sans-serif;
+          color: #2c4b56;
+          font-weight: 600;
+          margin-bottom: 5px; }
+        .page-section.project-section .project-container .project .project-location {
+          text-transform: uppercase;
+          font-family: "anivers", sans-serif;
+          color: #2c4b56;
+          font-weight: 600;
+          line-height: 1.25em;
+          font-size: 16px; }
+  .page-section.project-detail-section .project .project-top.left-angle-bg {
+    background: transparent url("../images/grayshapes-bg.png") no-repeat left top; }
+  .page-section.project-detail-section .project .project-top .project-titlebar {
+    text-align: center;
+    padding: 3vh 0; }
+    .page-section.project-detail-section .project .project-top .project-titlebar h2, .page-section.project-detail-section .project .project-top .project-titlebar h3 {
+      font-family: "anivers", sans-serif;
+      font-weight: 600;
+      color: #2c4b56; }
+    .page-section.project-detail-section .project .project-top .project-titlebar .project-type {
+      text-transform: uppercase;
+      font-size: 21px;
+      margin-bottom: 5px; }
+    .page-section.project-detail-section .project .project-top .project-titlebar .project-name {
+      font-size: 32px; }
+  .page-section.project-detail-section .project .project-top figure {
+    margin: 0 5%; }
+  .page-section.project-detail-section .project .project-bottom {
+    padding: 3vh 0; }
+    .page-section.project-detail-section .project .project-bottom.right-angle-bg {
+      background: transparent url("../images/bg-shape.png") no-repeat right top;
+      background-size: 70%; }
+    .page-section.project-detail-section .project .project-bottom .project-information {
+      margin: 0 5%; }
+      .page-section.project-detail-section .project .project-bottom .project-information .project-title {
+        font-family: "anivers", sans-serif;
+        font-size: 32px;
+        font-weight: 600;
+        color: #2c4b56;
+        margin-bottom: 5px; }
+      .page-section.project-detail-section .project .project-bottom .project-information .project-details {
+        margin: 0; }
+        .page-section.project-detail-section .project .project-bottom .project-information .project-details p {
+          text-transform: uppercase;
+          font-family: "anivers", sans-serif;
+          font-weight: 600;
+          color: #2c4b56; }
+  .page-section.development-section .development-container {
+    flex-basis: 90%;
+    padding: 3vh 0; }
+    .page-section.development-section .development-container .development-left {
+      text-align: center;
+      margin-bottom: 25px; }
+    .page-section.development-section .development-container .development-right p {
+      margin: 0 0 6px;
+      font-family: "anivers", sans-serif;
+      font-weight: 600;
+      color: #fff; }
+  .page-section.capability-section .capability-container {
+    flex-basis: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3vh 0; }
+    .page-section.capability-section .capability-container .cap-left {
+      flex-basis: 60%;
+      text-align: center;
+      margin-bottom: 40px; }
+    .page-section.capability-section .capability-container .cap-right {
+      flex-basis: 80%;
+      font-family: "anivers", sans-serif;
+      font-weight: 600;
+      text-transform: uppercase; }
+  .page-section.capability-section.ltgreen-bg {
+    margin-bottom: 5vh; }
+  .page-section.capability-section.white-bg {
+    color: #2c4b56; }
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; }
+  .footer .footer-top {
+    text-align: center;
+    flex-basis: 100%; }
+    .footer .footer-top svg {
+      width: 190px;
+      height: 70px; }
+  .footer .footer-bottom {
+    flex-basis: 90%;
+    text-align: left; }
+    .footer .footer-bottom p {
+      margin: 0; }
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+/*** IPHONE X : Landscape ***/
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px) {
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    height: 202px; }
+    .header .header-logo {
+      position: absolute;
+      left: 46%;
+      top: 42.5%;
+      transform: translateY(-50%);
+      z-index: 1; }
+      .header .header-logo svg {
+        width: 400px;
+        height: 125px; }
+  .homepage-section.mobile-slides {
+    display: none; }
+  .homepage-section.homepage-slides {
+    display: flex;
+    position: relative;
+    z-index: 1;
+    top: 0; }
+    .homepage-section.homepage-slides .swiper {
+      width: 100%;
+      height: calc(100vw * .59); }
+      .homepage-section.homepage-slides .swiper .swiper-wrapper .swiper-slide {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative; }
+        .homepage-section.homepage-slides .swiper .swiper-wrapper .swiper-slide img {
+          width: 100%;
+          height: 100%;
+          display: block; }
+        .homepage-section.homepage-slides .swiper .swiper-wrapper .swiper-slide .swiper-caption {
+          position: absolute;
+          left: 39.5833333333%;
+          bottom: 2.8571428571%;
+          z-index: 1;
+          padding-right: 20%; }
+          .homepage-section.homepage-slides .swiper .swiper-wrapper .swiper-slide .swiper-caption p {
+            font-size: 18px;
+            margin: 0;
+            line-height: 2em; }
+            .homepage-section.homepage-slides .swiper .swiper-wrapper .swiper-slide .swiper-caption p em {
+              font-style: normal;
+              font-family: "anivers", sans-serif;
+              font-size: 2em;
+              font-weight: 400; }
+              .homepage-section.homepage-slides .swiper .swiper-wrapper .swiper-slide .swiper-caption p em strong {
+                font-weight: 600; }
+      .homepage-section.homepage-slides .swiper .swiper-pagination .swiper-pagination-bullet {
+        background: transparent;
+        width: 18px;
+        height: 18px;
+        border-radius: 0;
+        margin-bottom: 9px;
+        border: 1px solid #fff;
+        opacity: 1; }
+        .homepage-section.homepage-slides .swiper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+          background: #fff; }
+  .homepage-section.homepage-content-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh 0; }
+    .homepage-section.homepage-content-section .homepage-content-container {
+      flex-basis: 80%; }
+      .homepage-section.homepage-content-section .homepage-content-container .homepage-content {
+        text-align: center;
+        line-height: 2.5em; }
+        .homepage-section.homepage-content-section .homepage-content-container .homepage-content .btn.text-btn {
+          font-size: 21px; }
+  .swiper-pagination-vertical.swiper-pagination-bullets {
+    right: 20px; }
+  .swiper-vertical > .swiper-pagination-bullets {
+    right: 20px; }
+  .page-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .page-section.page-heroimage {
+      margin-top: 30px; }
+    .page-section.page-content-section {
+      background: transparent url("../images/grayshapes-bg.png") no-repeat left top;
+      background-size: contain; }
+      .page-section.page-content-section .page-content-container {
+        flex-basis: 50%;
+        padding: 11vh 0;
+        text-align: center; }
+        .page-section.page-content-section .page-content-container .subtitle {
+          text-transform: uppercase;
+          font-family: "anivers", sans-serif;
+          font-size: 21px;
+          font-weight: 600;
+          color: #2c4b56;
+          margin-bottom: 0; }
+        .page-section.page-content-section .page-content-container h2, .page-section.page-content-section .page-content-container h4 {
+          font-family: "anivers", sans-serif;
+          font-weight: 600;
+          color: #2c4b56;
+          font-size: 28px;
+          margin-bottom: 25px; }
+        .page-section.page-content-section .page-content-container h3 {
+          font-family: "anivers", sans-serif;
+          font-weight: 600;
+          color: #2c4b56;
+          font-size: 32px; }
+        .page-section.page-content-section .page-content-container h4 {
+          margin-bottom: 5px;
+          font-size: 24px; }
+        .page-section.page-content-section .page-content-container p {
+          font-size: 18px;
+          line-height: 36px; }
+      .page-section.page-content-section .wpcf7 {
+        margin: 4.5vh 0; }
+        .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group {
+          margin-bottom: 0;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: center; }
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half,
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full {
+            margin-bottom: 15px; }
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .form-control,
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .form-control {
+              border-radius: 0;
+              border-color: #2c4b56;
+              color: #2c4b56; }
+              .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .form-control::placeholder,
+              .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .form-control::placeholder {
+                color: #2c4b56; }
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .wpcf7-textarea,
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .wpcf7-textarea {
+              width: 100%;
+              padding: 10px; }
+              .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .wpcf7-textarea::placeholder,
+              .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .wpcf7-textarea::placeholder {
+                color: #2c4b56; }
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half .right-text,
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full .right-text {
+              text-align: right; }
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-half {
+            flex-basis: 49%; }
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .one-full {
+            flex-basis: 100%; }
+          .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .btn {
+            padding: 0;
+            font-family: "anivers", sans-serif;
+            font-weight: 600;
+            font-size: 18px;
+            text-transform: uppercase; }
+            .page-section.page-content-section .wpcf7 .wpcf7-form .contact-form-container .form-group .btn .fas {
+              padding-right: 15px; }
+    .page-section.principles-section {
+      padding: 3vh 0; }
+      .page-section.principles-section .left-column,
+      .page-section.principles-section .right-column {
+        text-align: left;
+        flex-basis: 45%; }
+      .page-section.principles-section .left-column {
+        margin-bottom: 25px;
+        text-align: right;
+        padding-right: 10%; }
+      .page-section.principles-section .right-column {
+        font-weight: 600;
+        font-family: "anivers", sans-serif;
+        font-size: 18px; }
+        .page-section.principles-section .right-column ul {
+          list-style-position: inside;
+          padding: 0;
+          margin: 15px 0;
+          font-weight: normal; }
+          .page-section.principles-section .right-column ul li {
+            padding: 4px 0; }
+    .page-section.leadership-section {
+      background: transparent url("../images/bg-shape.png") no-repeat right top;
+      background-size: 70%;
+      margin: 3vh 0; }
+      .page-section.leadership-section .leadership-container {
+        flex-basis: 80%; }
+        .page-section.leadership-section .leadership-container .leadership {
+          margin-bottom: 45px;
+          text-align: center;
+          display: flex;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: flex-start; }
+          .page-section.leadership-section .leadership-container .leadership .photo {
+            flex-basis: 30%;
+            margin-right: 5%; }
+          .page-section.leadership-section .leadership-container .leadership .leadership-bio {
+            flex-basis: 60%;
+            text-align: left; }
+            .page-section.leadership-section .leadership-container .leadership .leadership-bio h2, .page-section.leadership-section .leadership-container .leadership .leadership-bio h3 {
+              font-family: "anivers", sans-serif;
+              font-weight: 600;
+              color: #2c4b56; }
+            .page-section.leadership-section .leadership-container .leadership .leadership-bio .title {
+              text-transform: uppercase;
+              font-size: 21px; }
+    .page-section.project-section {
+      background: transparent url("../images/bg-shape.png") no-repeat right center;
+      background-size: 30%;
+      padding-bottom: 10vh; }
+      .page-section.project-section .project-container {
+        flex-basis: 80%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; }
+        .page-section.project-section .project-container .project {
+          margin-bottom: 50px;
+          flex-basis: 48%; }
+          .page-section.project-section .project-container .project p {
+            font-size: 18px;
+            line-height: 32px; }
+          .page-section.project-section .project-container .project .project-name {
+            font-family: "anivers", sans-serif;
+            color: #2c4b56;
+            font-weight: 600;
+            margin-bottom: 5px; }
+          .page-section.project-section .project-container .project .project-location {
+            text-transform: uppercase;
+            font-family: "anivers", sans-serif;
+            color: #2c4b56;
+            font-weight: 600;
+            line-height: 1.25em;
+            font-size: 16px; }
+    .page-section.project-detail-section .project .project-top {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      .page-section.project-detail-section .project .project-top.left-angle-bg {
+        background: transparent url("../images/grayshapes-bg.png") no-repeat left top; }
+      .page-section.project-detail-section .project .project-top .project-titlebar {
+        text-align: center;
+        padding: 3vh 0;
+        flex-grow: 1;
+        flex-basis: 100%; }
+        .page-section.project-detail-section .project .project-top .project-titlebar h2, .page-section.project-detail-section .project .project-top .project-titlebar h3 {
+          font-family: "anivers", sans-serif;
+          font-weight: 600;
+          color: #2c4b56; }
+        .page-section.project-detail-section .project .project-top .project-titlebar .project-type {
+          text-transform: uppercase;
+          font-size: 21px;
+          margin-bottom: 5px; }
+        .page-section.project-detail-section .project .project-top .project-titlebar .project-name {
+          font-size: 32px; }
+      .page-section.project-detail-section .project .project-top figure {
+        margin: 0 5%;
+        flex-basis: 60%; }
+    .page-section.project-detail-section .project .project-bottom {
+      padding: 3vh 0 6vh;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center; }
+      .page-section.project-detail-section .project .project-bottom.right-angle-bg {
+        background: transparent url("../images/bg-shape.png") no-repeat right top;
+        background-size: 30%; }
+      .page-section.project-detail-section .project .project-bottom .project-information {
+        margin: 0 5%;
+        flex-basis: 60%; }
+        .page-section.project-detail-section .project .project-bottom .project-information .project-title {
+          font-family: "anivers", sans-serif;
+          font-size: 32px;
+          font-weight: 600;
+          color: #2c4b56;
+          margin-bottom: 5px; }
+        .page-section.project-detail-section .project .project-bottom .project-information .project-details {
+          margin: 0; }
+          .page-section.project-detail-section .project .project-bottom .project-information .project-details p {
+            text-transform: uppercase;
+            font-family: "anivers", sans-serif;
+            font-weight: 600;
+            color: #2c4b56; }
+    .page-section.development-section .development-container {
+      flex-basis: 90%;
+      padding: 3vh 0;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center; }
+      .page-section.development-section .development-container .development-left {
+        text-align: left;
+        margin-bottom: 25px;
+        padding-right: 5%;
+        flex-basis: 30%; }
+      .page-section.development-section .development-container .development-right {
+        flex-basis: 30%; }
+        .page-section.development-section .development-container .development-right p {
+          margin: 0 0 6px;
+          font-family: "anivers", sans-serif;
+          font-weight: 600;
+          color: #fff; }
+    .page-section.capability-section .capability-container {
+      flex-basis: 80%;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-items: center;
+      margin: 3vh 0; }
+      .page-section.capability-section .capability-container .cap-left {
+        flex-basis: 40%;
+        text-align: center;
+        margin-bottom: 40px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center; }
+        .page-section.capability-section .capability-container .cap-left figure {
+          flex-basis: 30%;
+          margin-bottom: 0; }
+        .page-section.capability-section .capability-container .cap-left h3 {
+          flex-basis: 50%;
+          padding-left: 5%;
+          text-align: left; }
+      .page-section.capability-section .capability-container .cap-right {
+        flex-basis: 45%;
+        padding-left: 5%;
+        font-family: "anivers", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase; }
+    .page-section.capability-section.ltgreen-bg {
+      margin-bottom: 5vh; }
+    .page-section.capability-section.white-bg {
+      color: #2c4b56; }
+    .page-section.capability-section:nth-child(odd) .capability-container .cap-left {
+      order: 1; }
+      .page-section.capability-section:nth-child(odd) .capability-container .cap-left figure {
+        order: 1; }
+      .page-section.capability-section:nth-child(odd) .capability-container .cap-left h3 {
+        order: 0; }
+    .page-section.capability-section:nth-child(odd) .capability-container .cap-right {
+      order: 0;
+      padding-left: 0;
+      padding-right: 5%;
+      text-align: right; }
+  .page-template-page-contact .page-section.page-content-section {
+    background-size: 30%; }
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; }
+    .footer .footer-top {
+      text-align: center;
+      flex-basis: 100%; }
+      .footer .footer-top svg {
+        width: 220px;
+        height: 90px; }
+    .footer .footer-bottom {
+      flex-basis: 90%;
+      text-align: left; }
+      .footer .footer-bottom p {
+        margin: 0; } }
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/

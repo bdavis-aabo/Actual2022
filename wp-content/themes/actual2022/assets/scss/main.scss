@@ -1,0 +1,369 @@
+@import 'design';
+@import 'navigation';
+
+.header { position: absolute; top: 0; left: 0; right: 0; z-index: 100; height: 60px;
+	.header-logo { position: absolute; left: 8%; top: 10px; transform: translateY(0); z-index: 1;
+		svg { width: 210px; height: 80px; }
+	}
+}
+
+
+// HOMEPAGE STYLES
+.homepage-section {
+	&.mobile-slides { margin-top: 30px;
+		.swiper {
+			.swiper-wrapper {
+				.swiper-slide {
+					.swiper-caption { min-height: 150px; background: $ltgreen; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+						.caption-content { flex-basis: 90%;
+							p { margin: 0; }
+						}
+					}
+				}
+			}
+			.swiper-pagination { bottom: 150px;
+				.swiper-pagination-bullet { background: transparent; width: 18px; height: 18px; border-radius: 0; margin-bottom: 5px; margin-right: 9px; border: 1px solid $white; opacity: 1;
+					&.swiper-pagination-bullet-active { background: $white; }
+				}
+			}
+		}
+
+	}
+ 	&.homepage-slides { display: none; }
+	&.homepage-content-section { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 5vh 0;
+		background: transparent url('../images/bg-shape.png') no-repeat right center; background-size: contain;
+		.homepage-content-container { flex-basis: 80%;
+			.homepage-content { text-align: center;
+				font-size: 1.15em; line-height: 2.25em;
+			}
+		}
+	}
+}
+
+// PAGE STYLES
+.page-section { display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+	&.page-heroimage { margin-top: 30px; }
+	&.page-content-section { background: transparent url('../images/grayshapes-bg.png') no-repeat left top;
+		.page-content-container { flex-basis: 90%; padding: 3vh 0; text-align: center;
+			.subtitle { text-transform: uppercase; font-family: $anivers; font-size: 21px; font-weight: 600; color: $dkblue; margin-bottom: 0; }
+			h2, h4 { font-family: $anivers; font-weight: 600; color: $dkblue; font-size: 28px; margin-bottom: 25px; }
+			h3 { font-family: $anivers; font-weight: 600; color: $dkblue; font-size: 32px; }
+			h4 { margin-bottom: 5px; font-size: 24px; }
+			p  { font-size: 18px; line-height: 36px; }
+		}
+		.wpcf7 { margin: 4.5vh 0;
+			.wpcf7-form {
+				.contact-form-container {
+					.form-group { margin-bottom: 0;
+						.one-half,
+						.one-full { margin-bottom: 15px;
+							.form-control { border-radius: 0; border-color: $dkblue; color: $dkblue;
+								&::placeholder { color: $dkblue; }
+							}
+							.wpcf7-textarea { width: 100%; padding: 10px;
+								&::placeholder { color: $dkblue; }
+							}
+							.right-text { text-align: right; }
+						}
+						.btn { padding: 0; font-family: $anivers; font-weight: 600; font-size: 18px; text-transform: uppercase;
+							.fas { padding-right: 15px; }
+						}
+					}
+				}
+			}
+		}
+	}
+	&.principles-section { padding: 3vh 0;
+		.left-column,
+		.right-column { text-align: center; }
+		.left-column { margin-bottom: 25px; }
+		.right-column { font-weight: 600; font-family: $anivers; font-size: 18px;
+			ul { list-style-position: inside; padding: 0; margin: 15px 0; font-weight: normal;
+				li { padding: 4px 0; }
+			}
+		}
+	}
+	&.leadership-section { background: transparent url('../images/bg-shape.png') no-repeat right top; background-size: 70%; margin: 3vh 0;
+		.leadership-container { flex-basis: 90%;
+			.leadership { margin-bottom: 45px; text-align: center;
+				.leadership-bio {
+					h2, h3 { font-family: $anivers; font-weight: 600; color: $dkblue; }
+					.title { text-transform: uppercase; font-size: 21px; }
+				}
+			}
+		}
+	}
+	&.project-section { background: transparent url('../images/bg-shape.png') no-repeat right center; background-size: 70%;
+		.project-container { flex-basis: 90%;
+			.project { margin-bottom: 30px;
+				p { font-size: 18px; line-height: 32px; }
+				.project-name { font-family: $anivers; color: $dkblue; font-weight: 600; margin-bottom: 5px; }
+				.project-location { text-transform: uppercase; font-family: $anivers; color: $dkblue; font-weight: 600; line-height: 1.25em; font-size: 16px; }
+			}
+		}
+	}
+	&.project-detail-section {
+		.project {
+			.project-top {
+				&.left-angle-bg { background: transparent url('../images/grayshapes-bg.png') no-repeat left top; }
+				.project-titlebar { text-align: center; padding: 3vh 0;
+					h2, h3 { font-family: $anivers; font-weight: 600; color: $dkblue; }
+					.project-type { text-transform: uppercase; font-size: 21px; margin-bottom: 5px; }
+					.project-name { font-size: 32px; }
+				}
+				figure { margin: 0 5%; }
+			}
+			.project-bottom { padding: 3vh 0;
+				&.right-angle-bg { background: transparent url('../images/bg-shape.png') no-repeat right top; background-size: 70%; }
+				.project-information { margin: 0 5%;
+					.project-title { font-family: $anivers; font-size: 32px; font-weight: 600; color: $dkblue; margin-bottom: 5px; }
+					.project-details { margin: 0;
+						p { text-transform: uppercase; font-family: $anivers; font-weight: 600; color: $dkblue; }
+					}
+				}
+			}
+		}
+	}
+	&.development-section {
+		.development-container { flex-basis: 90%; padding: 3vh 0;
+			.development-left { text-align: center; margin-bottom: 25px; }
+			.development-right {
+				p { margin: 0 0 6px; font-family: $anivers; font-weight: 600; color: $white; }
+			}
+		}
+	}
+	&.capability-section {
+		.capability-container { flex-basis: 90%; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin: 3vh 0;
+			.cap-left { flex-basis: 60%; text-align: center; margin-bottom: 40px; }
+			.cap-right { flex-basis: 80%; font-family: $anivers; font-weight: 600; text-transform: uppercase; }
+		}
+		&.ltgreen-bg { margin-bottom: 5vh; }
+		&.white-bg   { color: $dkblue; }
+	}
+}
+
+// FOOTER STYLES
+.footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 20px 0;
+	.footer-top { text-align: center; flex-basis: 100%;
+		svg { width: 190px; height: 70px; }
+	}
+	.footer-bottom { flex-basis: 90%; text-align: left;
+		p { margin: 0; }
+	}
+}
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+
+}
+
+/*** IPHONE X : Landscape ***/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+@media (min-width: 992px){
+
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+	.header { position: absolute; top: 0; left: 0; right: 0; z-index: 100; height: 202px;
+		.header-logo { position: absolute; left: 46%; top: 42.5%; transform: translateY(-50%); z-index: 1;
+			svg { width: 400px; height: 125px; }
+		}
+	}
+
+
+	// HOMEPAGE STYLES
+	.homepage-section {
+		&.mobile-slides { display: none; }
+	 	&.homepage-slides { display: flex; position: relative; z-index: 1; top: 0;
+			.swiper { width: 100%; height: calc(100vw * .59);
+				.swiper-wrapper {
+					.swiper-slide { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; position: relative;
+						img { width: 100%; height: 100%; display: block; }
+						.swiper-caption { position: absolute; left: percentage(950/2400); bottom: percentage(40/1400); z-index: 1; padding-right: 20%;
+							p { font-size: 18px; margin: 0; line-height: 2em;
+								em { font-style: normal; font-family: $anivers; font-size: 2em; font-weight: 400;
+									strong { font-weight: 600; }
+								}
+							}
+						}
+					}
+				}
+				.swiper-pagination {
+					.swiper-pagination-bullet { background: transparent; width: 18px; height: 18px; border-radius: 0; margin-bottom: 9px; border: 1px solid $white;
+						opacity: 1;
+						&.swiper-pagination-bullet-active { background: $white; }
+					}
+				}
+			}
+		}
+		&.homepage-content-section { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 5vh 0;
+			.homepage-content-container { flex-basis: 80%;
+				.homepage-content { text-align: center; line-height: 2.5em;
+					.btn {
+						&.text-btn { font-size: 21px; }
+					}
+				}
+			}
+		}
+	}
+
+	// SWIPER STYLES
+	.swiper-pagination-vertical {
+		&.swiper-pagination-bullets { right: 20px; }
+	}
+	.swiper-vertical {
+		> .swiper-pagination-bullets { right: 20px; }
+	}
+
+	// PAGE STYLES
+	.page-section { display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+		&.page-heroimage { margin-top: 30px; }
+		&.page-content-section { background: transparent url('../images/grayshapes-bg.png') no-repeat left top; background-size: contain;
+			.page-content-container { flex-basis: 50%; padding: 11vh 0; text-align: center;
+				.subtitle { text-transform: uppercase; font-family: $anivers; font-size: 21px; font-weight: 600; color: $dkblue; margin-bottom: 0; }
+				h2, h4 { font-family: $anivers; font-weight: 600; color: $dkblue; font-size: 28px; margin-bottom: 25px; }
+				h3 { font-family: $anivers; font-weight: 600; color: $dkblue; font-size: 32px; }
+				h4 { margin-bottom: 5px; font-size: 24px; }
+				p  { font-size: 18px; line-height: 36px; }
+			}
+			.wpcf7 { margin: 4.5vh 0;
+				.wpcf7-form {
+					.contact-form-container {
+						.form-group { margin-bottom: 0; display: flex; flex-wrap: nowrap; justify-content: space-between; align-items: center;
+							.one-half,
+							.one-full { margin-bottom: 15px;
+								.form-control { border-radius: 0; border-color: $dkblue; color: $dkblue;
+									&::placeholder { color: $dkblue; }
+								}
+								.wpcf7-textarea { width: 100%; padding: 10px;
+									&::placeholder { color: $dkblue; }
+								}
+								.right-text { text-align: right; }
+							}
+							.one-half { flex-basis: 49%; }
+							.one-full { flex-basis: 100%; }
+							.btn { padding: 0; font-family: $anivers; font-weight: 600; font-size: 18px; text-transform: uppercase;
+								.fas { padding-right: 15px; }
+							}
+						}
+					}
+				}
+			}
+		}
+		&.principles-section { padding: 3vh 0;
+			.left-column,
+			.right-column { text-align: left; flex-basis: 45%; }
+			.left-column { margin-bottom: 25px; text-align: right; padding-right: 10%; }
+			.right-column { font-weight: 600; font-family: $anivers; font-size: 18px;
+				ul { list-style-position: inside; padding: 0; margin: 15px 0; font-weight: normal;
+					li { padding: 4px 0; }
+				}
+			}
+		}
+		&.leadership-section { background: transparent url('../images/bg-shape.png') no-repeat right top; background-size: 70%; margin: 3vh 0;
+			.leadership-container { flex-basis: 80%;
+				.leadership { margin-bottom: 45px; text-align: center; display: flex; flex-wrap: nowrap; justify-content: center; align-items: flex-start;
+					.photo { flex-basis: 30%; margin-right: 5%; }
+					.leadership-bio { flex-basis: 60%; text-align: left;
+						h2, h3 { font-family: $anivers; font-weight: 600; color: $dkblue; }
+						.title { text-transform: uppercase; font-size: 21px; }
+					}
+				}
+			}
+		}
+		&.project-section { background: transparent url('../images/bg-shape.png') no-repeat right center; background-size: 30%; padding-bottom: 10vh;
+			.project-container { flex-basis: 80%; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;
+				.project { margin-bottom: 50px; flex-basis: 48%;
+					p { font-size: 18px; line-height: 32px; }
+					.project-name { font-family: $anivers; color: $dkblue; font-weight: 600; margin-bottom: 5px; }
+					.project-location { text-transform: uppercase; font-family: $anivers; color: $dkblue; font-weight: 600; line-height: 1.25em; font-size: 16px; }
+				}
+			}
+		}
+		&.project-detail-section {
+			.project {
+				.project-top { display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+					&.left-angle-bg { background: transparent url('../images/grayshapes-bg.png') no-repeat left top; }
+					.project-titlebar { text-align: center; padding: 3vh 0; flex-grow: 1; flex-basis: 100%;
+						h2, h3 { font-family: $anivers; font-weight: 600; color: $dkblue; }
+						.project-type { text-transform: uppercase; font-size: 21px; margin-bottom: 5px; }
+						.project-name { font-size: 32px; }
+					}
+					figure { margin: 0 5%; flex-basis: 60%; }
+				}
+				.project-bottom { padding: 3vh 0 6vh; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
+					&.right-angle-bg { background: transparent url('../images/bg-shape.png') no-repeat right top; background-size: 30%; }
+					.project-information { margin: 0 5%; flex-basis: 60%;
+						.project-title { font-family: $anivers; font-size: 32px; font-weight: 600; color: $dkblue; margin-bottom: 5px; }
+						.project-details { margin: 0;
+							p { text-transform: uppercase; font-family: $anivers; font-weight: 600; color: $dkblue; }
+						}
+					}
+				}
+			}
+		}
+		&.development-section {
+			.development-container { flex-basis: 90%; padding: 3vh 0; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center;
+				.development-left { text-align: left; margin-bottom: 25px; padding-right: 5%; flex-basis: 30%; }
+				.development-right { flex-basis: 30%;
+					p { margin: 0 0 6px; font-family: $anivers; font-weight: 600; color: $white; }
+				}
+			}
+		}
+		&.capability-section {
+			.capability-container { flex-basis: 80%; display: flex; flex-wrap: nowrap; justify-content: center; align-items: center; margin: 3vh 0;
+				.cap-left { flex-basis: 40%; text-align: center; margin-bottom: 40px; display: flex; flex-wrap: nowrap; justify-content: flex-start; align-items: center;
+					figure { flex-basis: 30%; margin-bottom: 0; }
+					h3 { flex-basis: 50%; padding-left: 5%; text-align: left; }
+				}
+				.cap-right { flex-basis: 45%; padding-left: 5%; font-family: $anivers; font-weight: 600; text-transform: uppercase; }
+			}
+			&.ltgreen-bg { margin-bottom: 5vh; }
+			&.white-bg   { color: $dkblue; }
+
+			&:nth-child(odd) {
+				.capability-container {
+					.cap-left { order: 1;
+						figure { order: 1; }
+						h3 { order: 0; }
+					}
+					.cap-right { order: 0; padding-left: 0; padding-right: 5%;
+						text-align: right;
+					}
+				}
+			}
+		}
+	}
+
+	.page-template-page-contact {
+		.page-section {
+			&.page-content-section { background-size: 30%; }
+		}
+	}
+
+	// FOOTER STYLES
+	.footer { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; padding: 20px 0;
+		.footer-top { text-align: center; flex-basis: 100%;
+			svg { width: 220px; height: 90px; }
+		}
+		.footer-bottom { flex-basis: 90%; text-align: left;
+			p { margin: 0; }
+		}
+	}
+
+}
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/

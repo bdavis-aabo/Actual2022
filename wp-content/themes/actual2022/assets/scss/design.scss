@@ -1,0 +1,71 @@
+// FONTS
+@import url("https://use.typekit.net/hag4dxq.css");
+$adonis:  'adonis-web', serif;
+$anivers: 'anivers', sans-serif;
+
+// COLORS
+$white:   #fff;
+$black:   #000;
+$ltgray:	#d1d2d4;
+$dkgray:  #585858;
+$ltgreen: #a0c1ac;
+$green:		#497476;
+$ltblue:	#55879a;
+$dkblue:	#2c4b56;
+
+.ltgreen-bg { color: $white; background: $ltgreen; }
+.dkgreen-bg { color: $ltgreen; background: $green; }
+.blue-bg		{ color: $white; background: $ltblue; }
+
+.gray-txt   { color: $ltgray; }
+
+// BUTTONS
+.btn {
+	&.text-btn { text-transform: uppercase; color: $dkblue; font-size: 16px; font-family: $anivers; padding-left: 0;
+		.fas { padding-right: 10px; }
+	}
+}
+.page-links { text-align: center; font-family: $anivers; font-weight: 600; color: $dkblue; text-transform: uppercase; font-size: 16px; margin: 10px 0; }
+
+// GENERIC STYLES
+html, body { padding: 0; margin: 0; }
+body { background: $white; font-family: $adonis; font-weight: 400; font-size: 16px; line-height: 28px;
+	p { margin: 0 0 15px; }
+	a { transition: all 666ms ease-in-out;
+		&:hover { text-decoration: none; }
+	}
+}
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+
+}
+
+/*** IPHONE X : Landscape ***/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+@media (min-width: 992px){
+
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+	.page-links { margin: 45px 0;
+		.btn { font-size: 21px;
+			.fas { padding-right: 15px; }
+		}
+	}
+}
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/
