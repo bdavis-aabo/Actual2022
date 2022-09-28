@@ -89,6 +89,9 @@
 				.leadership-bio {
 					h2, h3 { font-family: $anivers; font-weight: 600; color: $dkblue; }
 					.title { text-transform: uppercase; font-size: 21px; }
+					a { text-transform: uppercase; font-family: $anivers; background: $dkblue; color: $white; border-radius: 4px; padding: 8px 25px; transition: all 666ms ease-in-out;
+						&:hover { background: $ltblue; }
+					}
 				}
 			}
 		}
@@ -111,7 +114,8 @@
 					.project-type { text-transform: uppercase; font-size: 21px; margin-bottom: 5px; }
 					.project-name { font-size: 32px; }
 				}
-				figure { margin: 0 5%; }
+				figure,
+				#projectCarousel { margin: 0 5%; }
 			}
 			.project-bottom { padding: 3vh 0;
 				&.right-angle-bg { background: transparent url('../images/bg-shape.png') no-repeat right top; background-size: 70%; }
@@ -301,6 +305,7 @@
 						.project-name { font-size: 32px; }
 					}
 					figure { margin: 0 5%; flex-basis: 60%; }
+					#projectCarousel { flex-basis: 60%; }
 				}
 				.project-bottom { padding: 3vh 0 6vh; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;
 					&.right-angle-bg { background: transparent url('../images/bg-shape.png') no-repeat right top; background-size: 30%; }

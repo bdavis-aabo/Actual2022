@@ -20,15 +20,52 @@
 }
 
 .nav-btn {  }
-.navigation { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: rgba($white,.95); z-index: 1;
+.navigation { position: fixed; top: 0; right: 0; bottom: 0; left: 0; background: rgba($white,.95) url(../images/bg-shape.png) no-repeat right bottom; background-size: contain; z-index: 1;
 	display: flex; flex-wrap: wrap; justify-content: center; align-items: center; border: 1px solid $dkblue; transform: translateX(100%);
 	transition: all 666ms ease-in-out;
 	.menu-main-menu-container {
 		.main-menu { margin: 0; padding: 0; list-style: none;
-			li { padding: 8px 0; font-size: 1.25em;
+			li { padding: 8px 0; font-size: 1.5em; line-height: 1.75em;
 				a { color: $dkblue; }
 			}
 		}
 	}
 	&.is-visible { transform: translateX(0); }
 }
+
+
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+@media (min-width: 576px){
+
+}
+
+/*** IPHONE X : Landscape ***/
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
+
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px){
+	.navigation {
+		.menu-main-menu-container {
+			.main-menu {
+				li { font-size: 2em; line-height: 1.75em; }
+			}
+		}
+	}
+}
+
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+@media (min-width: 992px){
+
+}
+
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+@media (min-width: 1200px){
+
+}
+
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/

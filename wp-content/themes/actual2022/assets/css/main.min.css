@@ -117,7 +117,8 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(255, 255, 255, 0.95) url(../images/bg-shape.png) no-repeat right bottom;
+  background-size: contain;
   z-index: 1;
   display: flex;
   flex-wrap: wrap;
@@ -132,12 +133,26 @@ body {
     list-style: none; }
     .navigation .menu-main-menu-container .main-menu li {
       padding: 8px 0;
-      font-size: 1.25em; }
+      font-size: 1.5em;
+      line-height: 1.75em; }
       .navigation .menu-main-menu-container .main-menu li a {
         color: #2c4b56; }
   .navigation.is-visible {
     transform: translateX(0); }
 
+/*** SMALL DEVICES : Landscape phones, 576px + ***/
+/*** IPHONE X : Landscape ***/
+/*** MEDIUM DEVICES : Tablets, 768px + ***/
+@media (min-width: 768px) {
+  .navigation .menu-main-menu-container .main-menu li {
+    font-size: 2em;
+    line-height: 1.75em; } }
+
+/*** LARGE DEVICES : Desktops, 992px and up ***/
+/*** EXTRA LARGE DEVICES : Large Desktops, 1200px + ***/
+/*
+:::::::::: CUSTOM MEDIA QUERIES IF NEEDED ::::::::::
+*/
 .header {
   position: absolute;
   top: 0;
@@ -304,6 +319,16 @@ body {
         .page-section.leadership-section .leadership-container .leadership .leadership-bio .title {
           text-transform: uppercase;
           font-size: 21px; }
+        .page-section.leadership-section .leadership-container .leadership .leadership-bio a {
+          text-transform: uppercase;
+          font-family: "anivers", sans-serif;
+          background: #2c4b56;
+          color: #fff;
+          border-radius: 4px;
+          padding: 8px 25px;
+          transition: all 666ms ease-in-out; }
+          .page-section.leadership-section .leadership-container .leadership .leadership-bio a:hover {
+            background: #55879a; }
   .page-section.project-section {
     background: transparent url("../images/bg-shape.png") no-repeat right center;
     background-size: 70%; }
@@ -341,7 +366,8 @@ body {
       margin-bottom: 5px; }
     .page-section.project-detail-section .project .project-top .project-titlebar .project-name {
       font-size: 32px; }
-  .page-section.project-detail-section .project .project-top figure {
+  .page-section.project-detail-section .project .project-top figure,
+  .page-section.project-detail-section .project .project-top #projectCarousel {
     margin: 0 5%; }
   .page-section.project-detail-section .project .project-bottom {
     padding: 3vh 0; }
@@ -677,6 +703,8 @@ body {
           font-size: 32px; }
       .page-section.project-detail-section .project .project-top figure {
         margin: 0 5%;
+        flex-basis: 60%; }
+      .page-section.project-detail-section .project .project-top #projectCarousel {
         flex-basis: 60%; }
     .page-section.project-detail-section .project .project-bottom {
       padding: 3vh 0 6vh;
